@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="John H">
+<meta name="description" content="Over the last 8 years, the mobile computing platforms have become the #1 source for everyday internet users to get information. As developers, we understand the need to not only create user friendly websites for the desktop, but for phones and tablets as well, without sacrificing content and usability on either platform. Todays technoloy has proresses to where designing a mobile ready website should never cost anything extra. Cascading Style Sheets make it easy to style an entire website, and adapt layout easily to handheld devices as well.">
+<meta name="keywords" content="web design Bradenton, web design Florida, mobile ready websites, web design Sarasota, webpage design Bradenton, opencv, computer science">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="styles/style1.css"/>
+<link rel="stylesheet" type="text/css" href="styles/about.css"> 
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="scripts/animation.js"></script>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>About | iridium</title>
+<script>
+if ( $(window).width() > 1024) {     
+  document.write('<script type="text/javascript" src="scripts/navanimation.js"><\/script>');
+}
+</script>
+
+<script>
+function cycleImages(){
+    var $active = $('#logo .active');
+    var $next = ($active.next().length > 0) ? $active.next() : $('#logo img:first');
+    $next.css('z-index',2);//move the next image up the pile
+    $active.fadeOut(1500,function(){//fade out the top image
+      $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+      $next.css('z-index',3).addClass('active');//make the next image the top one
+    });
+  }
+$(document).ready(function(){
+// run every 7s
+setInterval('cycleImages()', 2000);
+});
+</script>
+
+<script type="text/javascript">//<![CDATA[ 
+  $(window).load(function(){
+    $("[data-toggle]").click(function() {
+      var toggle_el = $(this).data("toggle");
+      $(toggle_el).toggleClass("open-sidebar");
+    });
+  });//]]>  
+</script>
+
+</head>
+<body>
+<div class="container"> <!-- being contianer to shift content for menu -->
+<div class="resume-overlay"></div>

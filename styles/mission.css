@@ -1,0 +1,264 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css);
+
+#mission{
+    text-align:center;
+    margin: 0 auto;
+    height:400px;
+    z-index:3;
+}
+
+
+#container{
+	color: #02ced4;
+	font-size: 24px;
+	margin: 0 auto;
+	padding: 0px 0 100px;
+	width: 650px;
+	position:relative;
+	min-height: 90px;	
+	font-family:'Calibri',calibri;
+	text-shadow:0px 0px 10px #fc3a96, 0px 0px 2px #222;
+	line-height: 40px;
+}
+
+#container:before{
+	content: ">";
+	font-size: 48px;
+	left: -40px;
+	opacity: 0.25;
+	position: absolute;
+	text-shadow: 0px 0px 1px #111, 0px 0px 2px #222;
+	top: 0px;
+}
+
+#pricing{
+	width:100%;
+	background:#005f77;
+	height:auto;
+	border-top: 10px solid #484848;
+	margin:0 auto;
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+#pricing-wrap{
+	margin:0 auto;
+    height:auto;
+    padding-top:50px;
+    padding-bottom: 50px;
+    text-align:left;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+#pricing-wrap p{
+	font-family: 'Hammersmith One', 'sans-serif';
+	color:white;
+	font-size: 1.3em;
+}
+
+#cost{
+	width:60%;
+	height:300px;
+	margin:0 auto;
+	line-height: 300px;
+	border:3px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 10px #888888;
+	margin-top:20px;
+	margin-bottom: 20px;
+	float:right;
+	margin-right:25px;
+}
+
+
+#cost p{
+    width:100%;
+    text-align:center;
+    margin: 0 auto;
+    font-family: 'Oswald', 'sans-serif';
+    color:#28ED88;
+    font-size:4.0em;
+}
+
+#calc{
+    margin:0 auto;
+	width:100%;
+	height:auto;
+	background-color:#222;
+	color:#222;
+	border-top:10px solid #292c3d;
+}
+
+table.calc{
+	width:100%;
+}
+
+td.calctd{
+	width:50%;
+}
+
+#calc label{
+	float:none;
+}
+
+#calc-wrap{
+    padding-top:10px;
+    color:white;
+    font-family: 'Hammersmith One', 'sans-serif';
+    position: relative;
+    width:auto;
+    margin:0 auto;
+    background: #222;
+    float:left;
+}
+#calculator{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#calc input[type="text"]{
+    background-color: #2aaeeb;
+    border: 1px solid #000;
+    color: #000;
+    width: 300px;
+    color: #4B4D4D;
+    font-size:19px;
+    border-radius: 5px;
+    font-family: 'Hammersmith One', 'sans-serif';
+    text-align: center;
+    float:none;
+}
+
+#calc span.bigcheck-target {
+    font-family: FontAwesome; /* use an icon font for the checkbox */    
+}
+#calc input[type='checkbox'].bigcheck {     
+    position: relative;
+    left: -999em; /* hide the real checkbox */
+}
+
+#calc input[type='checkbox'].bigcheck + span.bigcheck-target:after {
+    content: "\f096"; /* In fontawesome, is an open square (fa-square-o) */
+
+
+}
+
+.bigcheck-target{
+	font-size: 30px;
+	float:right;
+	text-align: right;
+}
+
+#calc input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
+    content: "\f046"; /* fontawesome checked box (fa-check-square-o) */
+}
+
+#calc input[type="button"] {
+    background-color: #2BE4AF;
+    border: 1px solid #000;
+    color: black;
+    cursor: pointer;
+    font-family: museo-slab;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 9px 18px 7px;
+    text-transform: uppercase;
+    width: 305px;
+    float:none;
+    border-radius:10px;
+}
+
+#calc .bigcheck{
+    color: white; 
+    font-weight: 500;
+    font-size: 1.0em; /* set this to whatever size you want */
+}
+
+@media only screen and (max-width: 960px){
+
+	#cost p{
+		font-size: 3.0em;
+	}
+
+	#container{
+		color: #02ced4;
+		font-size: 24px;
+		margin: 0 auto;
+		padding: 0px 0 100px;
+		width: 90%;
+		position:relative;
+		min-height: 90px;	
+		font-family:'Calibri',calibri;
+		text-shadow:0px 0px 10px #fc3a96, 0px 0px 2px #222;
+		line-height: 40px;
+	}
+
+	#cost{
+		float:none;
+		margin:0 auto;
+		margin-top:15px;
+		width:90%;
+	}
+	#calc{
+		width:100%;
+	}
+	#calc-wrap{
+		width:100%;
+		float:none;
+	}
+
+	#calc label{
+	float:none;
+	font-size: 1.1em;
+	}
+
+    #calc input[type="text"]{
+        width: 90%;
+        height:60px;
+        font-size:1.5em;
+        position:relative;
+        margin: 0 auto;
+        float:none;
+    }
+
+	#calc input[type="button"] {
+	    background-color: #28ED88;
+	    border: 1px solid #000;
+	    color: black;
+	    cursor: pointer;
+	    font-family: museo-slab;
+	    font-size: 1.4em;
+	    font-weight: 700;
+	    line-height: 15px;
+	    padding: 9px 18px 7px;
+	    text-transform: uppercase;
+	    width: 90%;
+	    height:100px;
+	    margin-bottom: 10px;
+	    float:none;
+	    border-radius:10px
+	}
+
+	td.calctd{
+		display:inline-block;
+		width:100%;
+	}
+
+	#calc .bigcheck{
+	    color: white; 
+	    font-weight: 500;
+	    font-size: 1.1em; /* set this to whatever size you want */
+	}
+
+	.bigcheck-target{
+		position: relative;
+		font-size: 30px;
+		left:-20px;
+	}
+	html {
+    	-webkit-text-size-adjust: none;
+    }
+
+}

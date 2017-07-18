@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="John H">
+<meta name="description" content="So how much should a website cost exactly? The truth is, it really depends on the needs of the client. A personal website may start at $300-400$. A business website requiring a content management system, shopping cart options, and lots of dynamic content can begin around $2,000 and go up from there, depending on the needs of the business. Other options to consider are javascript animations, slide shows, picture galleries, and social netoworking integration. Below is a calculator to help gauge what the cost of a customized website would be.">
+<meta name="keywords" content="web design Bradenton, web design Florida, mobile ready websites, web design Sarasota, webpage design Bradenton, opencv, computer science">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/style1.css"/>
+<link rel="stylesheet" type="text/css" href="styles/mission.css"> 
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="scripts/animation.js"></script>
+<script src="scripts/calc.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="scripts/tw.js"></script>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Price Estimate | iridium</title>
+<script>
+if ( $(window).width() > 1024) {     
+  document.write('<script type="text/javascript" src="scripts/navanimation.js"><\/script>');
+}
+</script>
+
+<script>
+  function cycleImages(){
+      var $active = $('#logo .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#logo img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+        $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+        $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+  $(document).ready(function(){
+// run every 7s
+  setInterval('cycleImages()', 2000);
+  });
+</script>
+
+<script type="text/javascript">//<![CDATA[ 
+  $(window).load(function(){
+    $("[data-toggle]").click(function() {
+      var toggle_el = $(this).data("toggle");
+      $(toggle_el).toggleClass("open-sidebar");
+    });
+  });//]]>  
+  
+  </script>
+  </head>
+<body>
+<div class="container"> <!-- being contianer to shift content for menu -->

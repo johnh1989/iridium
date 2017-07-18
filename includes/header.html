@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="John H">
+<meta name="description" content="At Iridium Laboratories, we never limit ourselves to one computing platform. In the digital age, it's important to maintain a competetive edge through the integration of cloud, desktop, and mobile technologies, while maintaining an easy to use code base. Try this site on your mobile device, or just resize the browser to see the effect. If you are interested in having a website designed for your self, or a business, check out get a price quote, and
+drop us a line on our contact page!">
+<meta name="keywords" content="web design Bradenton, web design Florida, build websites, web design Sarasota, webpage design Bradenton, website prices, webpage price quotes, web design Manatee, affordable web page price, Web design prices, Web page">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="styles/style1.css"/>
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="scripts/jquery.flip.min.js"></script>
+<script src="scripts/animation.js"></script>
+<script src="scripts/docky.js"></script>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>iridium | laboratories</title>
+<!-- still need to add meta tags -->
+<script>
+if ( $(window).width() > 1024) {     
+  document.write('<script type="text/javascript" src="scripts/navanimation.js"><\/script>');
+}
+</script>
+
+<script>
+  function cycleImages(){
+      var $active = $('#logo .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#logo img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+        $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+        $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+  $(document).ready(function(){
+// run every 7s
+  setInterval('cycleImages()', 2000);
+  });
+</script>
+
+<script type="text/javascript">//<![CDATA[ 
+  $(window).load(function(){
+    $("[data-toggle]").click(function() {
+      var toggle_el = $(this).data("toggle");
+      $(toggle_el).toggleClass("open-sidebar");
+    });
+  });//]]>  
+</script>
+
+</head>
+<body>
+<div class="container"> <!-- being contianer to shift content for menu -->
+<div class="resume-overlay"></div>

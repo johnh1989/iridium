@@ -1,0 +1,61 @@
+<div id="main-two"> <!-- being main-two -->
+<script>
+var addSpin = function(){
+    $('.focus').addClass('spin');
+}
+$(window).scroll(function(){
+    addSpin();
+    setTimeout(function() {    
+        $('.focus').removeClass('spin');
+    },1200);
+});
+</script>
+<div id="overlay"> <!--begin overlay -->
+	<div id="contact"> <!-- Begin#contact -->
+	<div id="main-two-wrapper"> <!-- begin main two wrapper -->
+	<div id="social"> <!--begin social -->
+	<img class="robot" src="images/robot.png" alt="">
+	<ul>
+	<li class="twitter"><img class="focus" src="images/twitter.png"></li>
+	<li class="gplus"><img class="focus" src="images/gplus.png"></li>
+	<li class="facebook"><img class="focus" src="images/facebook.png"></li>
+	</ul>
+	</div><!--end social -->
+	<p>***Webmail temporarily down. use <a href="mailto:jh011889@gmail.com">jh011889@gmail.com***</a></p>
+		<div id="contact_wrap"> <!-- begin contact_wrap -->
+		<img src="images/envelope.png">
+			<form name="contactForm" id="contactForm" action="scripts/FormProcess.php" method="post" autocomplete="on">
+			<input type="hidden" name="Subject" value="iridium Contact Submission" />
+			<!-- The line above sets the Subject section of email  -->
+			<!--<input type="hidden" name="redirect" value="contactSent.htm" /> -->
+			<!-- The line above Redirects to another page to send Confirmation message and display Thank you  -->
+
+	        <label for="FirstName">First Name*</label><br>
+	        <input type="text" name="FirstName" id="FirstName" size="30" /><br>
+
+	        <label for="Telephone">Telephone</label><br>
+	        <input type="text" name="Telephone" size="30" /><br>
+
+			<label for="Date">Date</label><br>
+			<input type="text" name="Date"  id="Date" size="30" /><br>
+
+	        <label for="Email">Email*</label><br>    
+	        <input type="text" name="Email" id="Email" size="30"><br>
+
+	        <label for="Comments">Comments*</label><br>
+	        <textarea name="Comments" rows="3" cols="34"></textarea><br>
+	             
+		    <input type="submit" name="" value="Submit" /><br>
+		    <!-- Name="" so word "Submit" does not show Submit=Submit on email to recipient -->
+			</form>
+		</div> <!-- end contact_wrap -->
+		</div><!--end main two wrapper -->
+	</div> <!-- End contact -->
+</div> <!-- end overlay -->
+
+</div><!-- end main-two -->
+</div> <!-- end container -->
+</div> 
+</body>
+</html> 
+
